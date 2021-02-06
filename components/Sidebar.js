@@ -1,4 +1,5 @@
 import React from "react"
+import Link from "next/link"
 import {makeStyles} from "@material-ui/core/styles"
 import Drawer from "@material-ui/core/Drawer"
 import List from "@material-ui/core/List"
@@ -25,12 +26,16 @@ const Sidebar = () => {
     >
       <Toolbar />
       <List>
-        <ListItem button>
-          <ListItemText primary="Overview" />
-        </ListItem>
-        <ListItem button>
-          <ListItemText primary="UI API" />
-        </ListItem>
+        <Link href="/documents">
+          <ListItem button>
+            <ListItemText primary="Overview" />
+          </ListItem>
+        </Link>
+        <Link href="/documents/ui">
+          <ListItem button>
+            <ListItemText primary="UI API" />
+          </ListItem>
+        </Link>
       </List>
     </Drawer>
   )
