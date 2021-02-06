@@ -7,7 +7,7 @@ const Pause = () => {
   const [playerState, setPlayerState] = useState(false)
   const handleClick = () => setPlayerState(prev => !prev)
   return (
-    <ToggleButton value="check" selected onClick={handleClick}>
+    <ToggleButton onClick={handleClick}>
       {playerState ? <PlayArrowIcon /> : <PauseIcon />}
     </ToggleButton>
   )

@@ -27,11 +27,7 @@ const Volume = () => {
   }
 
   return (
-    <ToggleButton
-      value="check"
-      selected={!selected}
-      onChange={handleChangeSelected}
-    >
+    <ToggleButton selected={selected} onChange={handleChangeSelected}>
       <Box width={SLIDER_VALUE} display="flex" alignItems="center">
         <VolumeIcon value={value} muted={selected} />
         <Slider
