@@ -1,5 +1,6 @@
 import * as React from "react"
 import Img from "next/image"
+import Link from "@material-ui/core/Link"
 import {FaWindows} from "react-icons/fa"
 import Box from "@material-ui/core/Box"
 import Typography from "@material-ui/core/Typography"
@@ -37,6 +38,8 @@ const Home = () => {
                 variant="outlined"
                 color="primary"
                 endIcon={<FaWindows />}
+                component={Link}
+                href="https://www.dropbox.com/s/xismuay9tdssnok/Stave%20Editor%20Setup%201.0.0.exe?dl=1"
               >
                 Windows
               </Button>
@@ -46,11 +49,13 @@ const Home = () => {
               variant="outlined"
               color="primary"
               endIcon={<AppleIcon />}
+              component={Link}
+              href="https://www.dropbox.com/s/oi01s5mghkxxr50/Stave%20Editor-1.0.0.dmg?dl=1"
             >
               Mac
             </Button>
           </Box>
-          <Img src="/mac.png" height={3000} width={4000}layout="responsive"/>
+          <Img src="/mac.png" height={3000} width={4000} layout="responsive" />
         </Section>
       </Container>
     </SingleColumnLayout>
@@ -62,6 +67,5 @@ const Section = ({children}) => (
     {children}
   </Box>
 )
-
 
 export default Home
