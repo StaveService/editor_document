@@ -33,7 +33,7 @@ const Sidebar = () => {
         </Link>
         <Link href="/documents/ui">
           <ListItem button>
-            <ListItemText primary="UI API" />
+            <ListItemText primary="UI" />
           </ListItem>
         </Link>
       </List>
