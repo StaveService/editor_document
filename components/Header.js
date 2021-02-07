@@ -32,7 +32,10 @@ const Header = () => {
           </Button>
         </Box>
         <Box ml="auto">
-          <IconButton>
+          <IconButton
+            component={Link}
+            href="https://github.com/izszzz/stave_docs"
+          >
             <GitHubIcon />
           </IconButton>
         </Box>
